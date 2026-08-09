@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#170b1c">
+<title>Happy 20th Birthday, Hannah ❤️</title>
+<style>
+:root{--bg:#170b1c;--pink:#ff82b8;--gold:#ffd36a;--cream:#fff8f3;--muted:#e6ccd9;--ink:#421b35}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--cream);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 20% 8%,#6d294b55,transparent 32%),radial-gradient(circle at 90% 65%,#8b4d4b33,transparent 28%),var(--bg);overflow-x:hidden}.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 17px}.wrap{width:min(650px,100%);text-align:center}.eyebrow{letter-spacing:.2em;text-transform:uppercase;font-size:.7rem;color:var(--muted)}h1{font:500 clamp(2.5rem,11vw,5rem)/.98 Georgia,serif;margin:12px 0}.subtitle{color:var(--muted);line-height:1.6;max-width:470px;margin:0 auto 12px}.gift-stage{height:350px;display:grid;place-items:center;position:relative}.gift{width:225px;height:165px;position:relative;cursor:pointer;filter:drop-shadow(0 24px 30px #0007);transition:transform .2s}.gift:active{transform:scale(.96)}.box{position:absolute;left:15px;right:15px;bottom:10px;height:118px;border-radius:8px 8px 15px 15px;background:linear-gradient(145deg,#ff9ac7,#c92d72);border:1px solid #ffffff44}.box:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:28px;transform:translateX(-50%);background:var(--gold)}.lid{position:absolute;left:2px;right:2px;top:42px;height:38px;border-radius:8px;background:linear-gradient(145deg,#ffa2cc,#e54586);z-index:3;transition:transform .75s cubic-bezier(.2,.8,.2,1),top .75s}.lid:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:28px;transform:translateX(-50%);background:var(--gold)}.ribbon{position:absolute;left:50%;top:8px;transform:translateX(-50%);z-index:4;width:72px;height:40px;transition:.75s}.ribbon:before,.ribbon:after{content:"";position:absolute;top:0;width:40px;height:28px;border:8px solid var(--gold)}.ribbon:before{right:35px;border-radius:50% 50% 50% 5px;transform:rotate(28deg)}.ribbon:after{left:35px;border-radius:50% 50% 5px 50%;transform:rotate(-28deg)}.tag{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.5);opacity:0;z-index:2;font-size:4rem;transition:.55s .15s}.gift.open .lid{top:0;transform:translateY(-110px) rotate(-7deg)}.gift.open .ribbon{transform:translate(-50%,-110px) rotate(-7deg)}.gift.open .tag{opacity:1;transform:translate(-50%,-50%) scale(1)}button{border:0;border-radius:999px;padding:14px 24px;font-size:1rem;font-weight:800;background:var(--cream);color:#2c1027;cursor:pointer;box-shadow:0 12px 28px #0004}.tap{font-weight:700}.hidden{display:none}.letter-wrap{padding-top:24px}.paper{background:#fff8f3;color:var(--ink);border-radius:30px;padding:28px 20px;text-align:left;box-shadow:0 28px 75px #0007}.paper h2{font:500 2.35rem Georgia,serif;margin:7px 0 16px}.small{text-transform:uppercase;letter-spacing:.14em;font-size:.7rem;color:#a06483}.paper p{line-height:1.75;font-size:1rem}.hero-photo{width:100%;height:390px;object-fit:cover;border-radius:22px;margin:0 0 22px;object-position:center 30%}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:24px 0}.photo-card{background:#fff;border-radius:16px;padding:8px;box-shadow:0 8px 22px #7d456020;transform:rotate(-1deg)}.photo-card:nth-child(2){transform:rotate(1.2deg)}.photo-card:nth-child(3){transform:rotate(-.5deg)}.photo-card:nth-child(4){transform:rotate(1deg)}.photo-card:nth-child(5){transform:rotate(-1.2deg)}.photo-card img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px;display:block}.photo-card figcaption{text-align:center;font-family:Georgia,serif;padding:8px 2px 4px;color:#7b3d61}.note{margin-top:20px;padding:17px;border-radius:18px;background:#fff0f6;border:1px solid #f3c8db;line-height:1.6}.final{text-align:center;margin-top:28px;padding-top:23px;border-top:1px solid #ead2df}.final strong{font:500 1.6rem Georgia,serif}.cake{font-size:4rem;margin:10px}.confetti{position:fixed;top:-25px;z-index:100;pointer-events:none;animation:fall 3.4s linear forwards}@keyframes fall{to{transform:translate3d(var(--x),110vh,0) rotate(720deg);opacity:0}}.fade{animation:fade .8s ease both}@keyframes fade{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}@media(max-width:430px){.hero-photo{height:350px}.gallery{gap:8px}.paper{padding:23px 15px}}
+</style>
+</head>
+<body>
+<section class="screen" id="welcome">
+<div class="wrap">
+<div class="eyebrow">A little surprise made especially for you ✨</div>
+<h1>Happy 20th,<br>Hannah ❤️</h1>
+<p class="subtitle">I couldn't just say “happy birthday” and leave it there… so I made you a little gift. 🎁</p>
+<div class="gift-stage">
+<div class="gift" id="gift" role="button" tabindex="0" aria-label="Open Hannah's birthday gift">
+<div class="tag">🎂</div><div class="box"></div><div class="lid"></div><div class="ribbon"></div>
+</div>
+</div>
+<div class="tap" id="tap">Tap the gift 🎁</div>
+<div style="margin-top:17px"><button id="openBtn">Open your gift ✨</button></div>
+</div>
+</section>
+
+<section class="screen hidden" id="letter">
+<div class="wrap letter-wrap">
+<div class="paper fade">
+<img class="hero-photo" src="photo2.jpeg" alt="Hannah smiling in a blue top">
+<div class="small">For Hannah • 20th birthday</div>
+<h2>Happy Birthday, Hannah 💗</h2>
+<p>Today isn't just another birthday. It's a little reminder that 20 years ago, the world got someone genuinely special. 🎂</p>
+<p>I know we've had our ups and downs. We've disagreed, misunderstood each other, and had moments where things weren't always perfect. But through it all, I still believe that what's worth building is much greater than the moments that tried to pull us apart. 🥹</p>
+<p>Thank you for the laughs, the conversations, the memories, and simply for being you. I hope this new chapter brings you peace, genuine happiness, answered prayers, success, and so many reasons to smile.</p>
+<p>May 20 be the year you discover even more of yourself, chase the things you want, and realize just how much you are capable of. You deserve beautiful things, beautiful people, and beautiful memories. ✨</p>
+
+<h2 style="font-size:1.8rem;margin-top:28px">A little collection of you 🌷</h2>
+<div class="gallery">
+<figure class="photo-card"><img src="photo3.jpeg" alt="Hannah outdoors"><figcaption>Keep that smile ✨</figcaption></figure>
+<figure class="photo-card"><img src="photo1.jpeg" alt="Hannah smiling"><figcaption>Beautiful, as always 💗</figcaption></figure>
+<figure class="photo-card"><img src="photo4.jpeg" alt="Hannah in a floral dress"><figcaption>20 looks good on you 🌸</figcaption></figure>
+<figure class="photo-card"><img src="photo5.jpeg" alt="Hannah celebrating"><figcaption>Here's to more memories 🥂</figcaption></figure>
+<figure class="photo-card" style="grid-column:1/-1;max-width:78%;margin:auto"><img src="photo2.jpeg" alt="Hannah smiling in a blue top"><figcaption>The birthday girl herself 👑</figcaption></figure>
+</div>
+
+<div class="note"><strong>One thing I hope you remember:</strong><br>Life will change, people will change, and chapters will come and go. But I hope you never forget how worthy you are of love, happiness, peace and beautiful things. Keep being the amazing person you are. ❤️</div>
+
+<div class="final">
+<div class="cake">🎂</div>
+<strong>Cheers to 20 years of Hannah! 🥂</strong>
+<p>Here's to a new decade, new memories, bigger dreams and a whole lot more happiness.</p>
+<p style="font:500 1.45rem Georgia,serif">Happy 20th Birthday, Hannah! ❤️🎉</p>
+<p style="margin-bottom:0">— From someone genuinely wishing you the very best 🤍</p>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+const gift=document.getElementById('gift'),btn=document.getElementById('openBtn'),welcome=document.getElementById('welcome'),letter=document.getElementById('letter'),tap=document.getElementById('tap');
+function confetti(){const s=['✨','💗','🎉','💕','🌸','⭐','🎀','🥳'];for(let i=0;i<70;i++){let e=document.createElement('div');e.className='confetti';e.textContent=s[Math.floor(Math.random()*s.length)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(12+Math.random()*15)+'px';e.style.setProperty('--x',(Math.random()*180-90)+'px');e.style.animationDelay=Math.random()*.7+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),4300)}}
+function openGift(){if(gift.classList.contains('open'))return;gift.classList.add('open');tap.textContent='Your surprise is opening… 💕';btn.textContent='✨ Surprise!';confetti();setTimeout(()=>{welcome.classList.add('hidden');letter.classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});confetti()},950)}
+gift.addEventListener('click',openGift);btn.addEventListener('click',openGift);gift.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openGift()}});
+</script>
+</body>
+</html>
